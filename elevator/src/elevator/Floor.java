@@ -12,12 +12,6 @@ public class Floor {
 		this.flrNo = flrNo;
 	}
 	
-	public void up() {
-		this.flrNo++;
-	}
 	
-	public void down() {
-		this.flrNo--;
-	}
              
 }
