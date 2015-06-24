@@ -9,10 +9,10 @@ public class Elevator {
     }
     
 	public void up() {
-		flr.flrNo++;
+		flr.setFlrNo(flr.getFlrNo()+1);
 	}
 	
 	public void down() {
-		flr.flrNo--;
+		flr.setFlrNo(flr.getFlrNo()-1);
 	}
 }
