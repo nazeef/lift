@@ -3,8 +3,8 @@ package elevator;
 public class Door {
 	String type;
 	
-	public Door(String name){
-		this.type = name;
+	public Door(){
+		
 	}
 	
 	public void opening() {
