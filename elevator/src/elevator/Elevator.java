@@ -13,6 +13,10 @@ public class Elevator {
     	door=new Door();
     }
     
+    public int getFlrNo() {
+		return flr.flrNo;
+	}
+    
 	public void up(Integer flrNo) {
 		System.out.println("Moving up...");
 		btn.buttonpress(flrNo);

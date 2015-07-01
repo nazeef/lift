@@ -9,11 +9,12 @@ public class mainClass {
 		
 		Integer flrNo,numFloorsMax=5,flrNoPerson=0;
 		
-        Elevator elev=new Elevator();
+		ProxyManager mng=new ProxyManager();
+        //Elevator elev=new Elevator();
         Person p=new Person(3);
         Scanner scan=new Scanner(System.in);
         
-        System.out.println("Lift is on floor "+elev.flr.getFlrNo());
+        System.out.println("Lift is on floor "+mng.getFlrNo());
         
         //---------case 1
         
@@ -27,22 +28,22 @@ public class mainClass {
         
         if(flrNo>flrNoPerson && flrNo<=numFloorsMax){
         	//press button
-        	elev.up(flrNoPerson);
+        	mng.up(flrNoPerson);
         	
         }
         else if(flrNo<flrNoPerson && flrNo>0){
         	//press button
-        	elev.down(flrNoPerson);
+        	mng.down(flrNoPerson);
         }
         
         
-        if(flrNo>elev.flr.getFlrNo() && flrNo<=numFloorsMax){
+        if(flrNo>mng.getFlrNo() && flrNo<=numFloorsMax){
         	//press button
-        	elev.up(flrNo);
+        	mng.up(flrNo);
         }
-        else if(flrNo<elev.flr.getFlrNo() && flrNo>0){
+        else if(flrNo<mng.getFlrNo() && flrNo>0){
         	//press button
-        	elev.down(flrNo);
+        	mng.down(flrNo);
         }
         /*
         //------case 2
